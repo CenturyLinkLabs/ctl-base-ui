@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     ctl_base_ui (0.0.1)
+      haml (~> 4.0.0)
       rails (~> 4.0.3)
 
 GEM
@@ -35,6 +36,8 @@ GEM
     atomic (1.1.15)
     builder (3.1.4)
     erubis (2.7.0)
+    haml (4.0.5)
+      tilt
     hike (1.2.3)
     i18n (0.6.9)
     mail (2.5.4)

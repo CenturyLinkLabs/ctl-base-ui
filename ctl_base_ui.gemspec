@@ -7,14 +7,15 @@ require "ctl_base_ui/version"
 Gem::Specification.new do |s|
   s.name        = "ctl_base_ui"
   s.version     = CtlBaseUi::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of CtlBaseUi."
-  s.description = "TODO: Description of CtlBaseUi."
+  s.authors     = ["Alex Welch"]
+  s.email       = ["alexander.welch@savvis.com"]
+  s.homepage    = "http://localhost:3000"
+  s.summary     = "Internal CTL base UI toolkit"
+  s.description = "Internal CTL base UI toolkit"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.3"
+  s.add_dependency "haml", ["~> 4.0.0"]
 end

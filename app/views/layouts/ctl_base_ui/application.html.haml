@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    %title CtlBaseUi
+    = stylesheet_link_tag    "ctl_base_ui/application", media: "all"
+    = javascript_include_tag "ctl_base_ui/application"
+    = csrf_meta_tags
+  %body
+    = yield
