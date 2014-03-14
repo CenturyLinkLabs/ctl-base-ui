@@ -1,4 +1,6 @@
 @import 'colors';
+@import 'mixins';
+@import 'icons';
 
 
 header {
@@ -6,6 +8,7 @@ header {
   top: 0;
   width: 100%;
   margin-bottom: 2em;
+  background-color: #FFF;
   border-bottom: #EBEBEB 2px solid;
   padding: 1em;
   ul {
@@ -40,4 +43,116 @@ h2 {
 .lipstick-red {
   @extend .color-block;
   background-color: $lipstick_red;
+}
+
+/* Icons */
+
+.example-icon {
+  padding-left: 1.5em;
+  margin: 1em 0 0.5em;
+}
+
+.icon-plus {
+  @include icon-plus;
+  @extend .example-icon;
+}
+
+.icon-minus {
+  @include icon-minus;
+  @extend .example-icon;
+}
+
+.icon-x {
+  @include icon-x;
+  @extend .example-icon;
+}
+
+.icon-sprocket {
+  @include icon-sprocket;
+  @extend .example-icon;
+}
+
+.icon-arrowloop {
+  @include icon-arrowloop;
+  @extend .example-icon;
+}
+
+.icon-checkmark {
+  @include icon-checkmark;
+  @extend .example-icon;
+}
+
+.icon-document {
+  @include icon-document;
+  @extend .example-icon;
+}
+
+.icon-magnifying-glass {
+  @include icon-magnifying-glass;
+  @extend .example-icon;
+}
+
+.icon-pencil {
+  @include icon-pencil;
+  @extend .example-icon;
+}
+
+.icon-outbox {
+  @include icon-outbox;
+  @extend .example-icon;
+}
+
+.icon-grid {
+  @include icon-grid;
+  @extend .example-icon;
+}
+
+.icon-envelope {
+  @include icon-envelope;
+  @extend .example-icon;
+}
+
+.icon-list {
+  @include icon-list;
+  @extend .example-icon;
+}
+
+.icon-folder {
+  @include icon-folder;
+  @extend .example-icon;
+}
+
+.icon-menu {
+  @include icon-menu;
+  @extend .example-icon;
+}
+
+.icon-house {
+  @include icon-house;
+  @extend .example-icon;
+}
+
+.icon-star {
+  @include icon-star;
+  @extend .example-icon;
+}
+
+.icon-thin-arrow-right {
+  @include icon-thin-arrow-right;
+  @extend .example-icon;
+}
+
+.icon-thick-arrow-right {
+  @include icon-thick-arrow-right;
+  @extend .example-icon;
+}
+
+.icon-magnifying-glass-plus {
+  @include icon-magnifying-glass-plus;
+  @extend .example-icon;
+}
+
+.icon-magnifying-glass-minus {
+  @include icon-magnifying-glass-minus;
+  @extend .example-icon;
 }

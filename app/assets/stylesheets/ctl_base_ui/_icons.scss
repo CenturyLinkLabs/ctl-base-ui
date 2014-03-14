@@ -1,0 +1,110 @@
+@import 'mixins';
+
+@mixin icon-base {
+  background: asset-url('ctl_base_ui/icon_sprite.svg') no-repeat;
+  @include background-size(1em, 43em);
+}
+
+@mixin icon-plus {
+  @include icon-base;
+}
+
+@mixin icon-minus {
+  @include icon-base;
+  background-position: 0 -2em;
+}
+
+@mixin icon-x {
+  @include icon-base;
+  background-position: 0 -4em;
+}
+
+@mixin icon-sprocket {
+  @include icon-base;
+  background-position: 0 -6em;
+}
+
+@mixin icon-arrowloop {
+  @include icon-base;
+  background-position: 0 -8em;
+}
+
+@mixin icon-checkmark {
+  @include icon-base;
+  background-position: 0 -10em;
+}
+
+@mixin icon-document {
+  @include icon-base;
+  background-position: 0 -12em;
+}
+
+@mixin icon-magnifying-glass {
+  @include icon-base;
+  background-position: 0 -14em;
+}
+
+@mixin icon-pencil {
+  @include icon-base;
+  background-position: 0 -16em;
+}
+
+@mixin icon-outbox {
+  @include icon-base;
+  background-position: 0 -18em;
+}
+
+@mixin icon-grid {
+  @include icon-base;
+  background-position: 0 -20em;
+}
+
+@mixin icon-envelope {
+  @include icon-base;
+  background-position: 0 -22em;
+}
+
+@mixin icon-list {
+  @include icon-base;
+  background-position: 0 -24em;
+}
+
+@mixin icon-folder {
+  @include icon-base;
+  background-position: 0 -26em;
+}
+
+@mixin icon-menu {
+  @include icon-base;
+  background-position: 0 -28em;
+}
+
+@mixin icon-house {
+  @include icon-base;
+  background-position: 0 -30em;
+}
+
+@mixin icon-star {
+  @include icon-base;
+  background-position: 0 -32em;
+}
+
+@mixin icon-thin-arrow-right {
+  @include icon-base;
+  background-position: 0 -34em;
+}
+
+@mixin icon-thick-arrow-right {
+  @include icon-base;
+  background-position: 0 -36em;
+}
+
+@mixin icon-magnifying-glass-plus {
+  @include icon-base;
+  background-position: 0 -38em;
+}
+
+@mixin icon-magnifying-glass-minus {
+  @include icon-base;
+  background-position: 0 -40em;
+}

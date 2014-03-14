@@ -4,6 +4,11 @@
       %li= link_to('Colors', '#colors')
       %li= link_to('Icons', '#icons')
 %main
+  %section#about
+    %p
+      This style guide uses class names that are tied to corresponding mixin names.
+      In practice the class names can be much more semantic.
+
   %section#colors
     %h2 Color Palette
     = render 'colors'
