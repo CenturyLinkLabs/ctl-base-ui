@@ -1,0 +1,43 @@
+@import 'colors';
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 2em;
+  border-bottom: #EBEBEB 2px solid;
+  padding: 1em;
+  ul {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+main {
+  width: 960px;
+  margin: 100px auto 0;
+}
+
+section {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: #EBEBEB 1px solid;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* Section Specific styles */
+
+/* Colors */
+
+.color-block {
+  padding: 10px;
+}
+
+.lipstick-red {
+  @extend .color-block;
+  background-color: $lipstick_red;
+}

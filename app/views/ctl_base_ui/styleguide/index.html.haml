@@ -1,1 +1,12 @@
-boom
+%header
+  %nav
+    %ul
+      %li= link_to('Colors', '#colors')
+      %li= link_to('Icons', '#icons')
+%main
+  %section#colors
+    %h2 Color Palette
+    = render 'colors'
+  %section#icons
+    %h2 Icons
+    = render 'icons'
