@@ -18,4 +18,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.0.3"
   s.add_dependency "haml", ["~> 4.0.0"]
+  s.add_dependency "sass", ["~> 3.3.2"]
 end
