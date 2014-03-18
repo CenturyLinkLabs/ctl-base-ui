@@ -38,11 +38,32 @@ h2 {
 
 .color-block {
   padding: 10px;
+  margin: 10px 0px;
 }
 
 .lipstick-red {
   @extend .color-block;
   background-color: $lipstick_red;
+}
+
+.dark-blue {
+  @extend .color-block;
+  background-color: $dark_blue;
+}
+
+.sky-blue {
+  @extend .color-block;
+  background-color: $sky_blue;
+}
+
+.lime {
+  @extend .color-block;
+  background-color: $lime;
+}
+
+.ctl-dark-green {
+  @extend .color-block;
+  background-color: $ctl_dark_green;
 }
 
 /* Icons */
