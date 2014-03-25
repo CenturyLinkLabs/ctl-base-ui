@@ -76,6 +76,26 @@ h2 {
   background-color: $ctl_dark_green;
 }
 
+.light-grey {
+  @extend .color-block;
+  background-color: $light_grey; 
+}
+
+.medium-grey {
+  @extend .color-block;
+  background-color: $medium_grey; 
+}
+
+.warm-grey {
+  @extend .color-block;
+  background-color: $warm_grey; 
+}
+
+.dark-grey {
+  @extend .color-block;
+  background-color: $dark_grey; 
+}
+
 /* Icons */
 
 .example-icon {
