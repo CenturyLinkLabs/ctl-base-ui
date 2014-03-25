@@ -1,0 +1,39 @@
+@import 'colors';
+@import 'icons';
+
+.notice-default {
+  padding: 1em;
+  margin: .5em;
+  color: $grey;
+  background-color: $yellow;
+  overflow: auto;
+  line-height: 1.5;
+
+  a.dismiss {
+    margin-top: 0.25em;
+    float: right;
+    @include icon-x-2x;
+    text-indent: 100%;
+    overflow: hidden;
+    width: 2em;
+    height: 2em;
+  }
+}
+
+.notice-success {
+  @extend .notice-default;
+  color: $white;
+  background-color: $lime;
+}
+
+.notice-warning {
+  @extend .notice-default;
+  color: $white;
+  background-color: $orange;
+}
+
+.notice-danger {
+  @extend .notice-default;
+  color: $white;
+  background-color: $dark_red;
+}

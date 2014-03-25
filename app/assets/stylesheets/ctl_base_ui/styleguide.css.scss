@@ -46,6 +46,11 @@ h2 {
   background-color: $lipstick_red;
 }
 
+.dark-red {
+  @extend .color-block;
+  background-color: $dark_red;
+}
+
 .dark-blue {
   @extend .color-block;
   background-color: $dark_blue;
@@ -59,6 +64,11 @@ h2 {
 .lime {
   @extend .color-block;
   background-color: $lime;
+}
+
+.yellow {
+  @extend .color-block;
+  background-color: $yellow;
 }
 
 .ctl-dark-green {

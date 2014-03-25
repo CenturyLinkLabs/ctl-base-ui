@@ -5,6 +5,10 @@
   @include background-size(1em, 43em);
 }
 
+@mixin icon-2x {
+  @include background-size(2em, 86em);
+}
+
 @mixin icon-plus {
   @include icon-base;
 }
@@ -17,6 +21,12 @@
 @mixin icon-x {
   @include icon-base;
   background-position: 0 -4em;
+}
+
+@mixin icon-x-2x {
+  @include icon-base;
+  @include icon-2x;
+  background-position: 0 -8em;
 }
 
 @mixin icon-sprocket {
