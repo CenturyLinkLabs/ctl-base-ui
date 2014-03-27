@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'mixins';
 @import 'icons';
+@import 'buttons';
 
 
 header {
@@ -103,107 +104,121 @@ h2 {
   margin: 1em 0 0.5em;
 }
 
-.icon-plus {
-  @include icon-plus;
+.icon-plus-example {
+  @extend .icon-plus;
   @extend .example-icon;
 }
 
-.icon-minus {
-  @include icon-minus;
+.icon-minus-example {
+  @extend .icon-minus;
   @extend .example-icon;
 }
 
-.icon-x {
-  @include icon-x;
+.icon-x-example {
+  @extend .icon-x;
   @extend .example-icon;
 }
 
-.icon-sprocket {
-  @include icon-sprocket;
+.icon-sprocket-example {
+  @extend .icon-sprocket;
   @extend .example-icon;
 }
 
-.icon-arrowloop {
-  @include icon-arrowloop;
+.icon-arrowloop-example {
+  @extend .icon-arrowloop;
   @extend .example-icon;
 }
 
-.icon-checkmark {
-  @include icon-checkmark;
+.icon-checkmark-example {
+  @extend .icon-checkmark;
   @extend .example-icon;
 }
 
-.icon-document {
-  @include icon-document;
+.icon-document-example {
+  @extend .icon-document;
   @extend .example-icon;
 }
 
-.icon-magnifying-glass {
-  @include icon-magnifying-glass;
+.icon-magnifying-glass-example {
+  @extend .icon-magnifying-glass;
   @extend .example-icon;
 }
 
-.icon-pencil {
-  @include icon-pencil;
+.icon-pencil-example {
+  @extend .icon-pencil;
   @extend .example-icon;
 }
 
-.icon-outbox {
-  @include icon-outbox;
+.icon-outbox-example {
+  @extend .icon-outbox;
   @extend .example-icon;
 }
 
-.icon-grid {
-  @include icon-grid;
+.icon-grid-example {
+  @extend .icon-grid;
   @extend .example-icon;
 }
 
-.icon-envelope {
-  @include icon-envelope;
+.icon-envelope-example {
+  @extend .icon-envelope;
   @extend .example-icon;
 }
 
-.icon-list {
-  @include icon-list;
+.icon-list-example {
+  @extend .icon-list;
   @extend .example-icon;
 }
 
-.icon-folder {
-  @include icon-folder;
+.icon-folder-example {
+  @extend .icon-folder;
   @extend .example-icon;
 }
 
-.icon-menu {
-  @include icon-menu;
+.icon-menu-example {
+  @extend .icon-menu;
   @extend .example-icon;
 }
 
-.icon-house {
-  @include icon-house;
+.icon-house-example {
+  @extend .icon-house;
   @extend .example-icon;
 }
 
-.icon-star {
-  @include icon-star;
+.icon-star-example {
+  @extend .icon-star;
   @extend .example-icon;
 }
 
-.icon-thin-arrow-right {
-  @include icon-thin-arrow-right;
+.icon-thin-arrow-right-example {
+  @extend .icon-thin-arrow-right;
   @extend .example-icon;
 }
 
-.icon-thick-arrow-right {
-  @include icon-thick-arrow-right;
+.icon-thick-arrow-right-example {
+  @extend .icon-thick-arrow-right;
   @extend .example-icon;
 }
 
-.icon-magnifying-glass-plus {
-  @include icon-magnifying-glass-plus;
+.icon-magnifying-glass-plus-example {
+  @extend .icon-magnifying-glass-plus;
   @extend .example-icon;
 }
 
-.icon-magnifying-glass-minus {
-  @include icon-magnifying-glass-minus;
+.icon-magnifying-glass-minus-example {
+  @extend .icon-magnifying-glass-minus;
   @extend .example-icon;
+}
+
+/* Buttons */
+
+.button-primary-with-icon-plus {
+  @extend .button-primary;
+  @extend .icon-plus-for-button;
+  padding-left: 4em;
+}
+
+.button-primary-with-icon-minus {
+  @extend .button-primary;
+  @extend .icon-minus-for-button;
+  padding-left: 4em;
 }

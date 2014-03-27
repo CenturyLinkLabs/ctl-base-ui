@@ -1,0 +1,55 @@
+@import 'mixins';
+
+$icons: (
+  plus: 0,
+  minus: 1,
+  x: 2,
+  sprocket: 3,
+  arrowloop: 4,
+  checkmark: 5,
+  document: 6,
+  magnifying-glass: 7,
+  pencil: 8,
+  outbox: 9,
+  grid: 10,
+  envelope: 11,
+  list: 12,
+  folder: 13,
+  menu: 14,
+  house: 15,
+  star: 16,
+  thin-arrow-right: 17,
+  thick-arrow-right: 18,
+  magnifying-glass-plus: 19,
+  magnifying-glass-minus: 20
+);
+
+@mixin icon-base {
+  background-image: asset-url('ctl_base_ui/icon_sprite.svg');
+  background-repeat: no-repeat;
+  @include background-size(1em, 43em);
+}
+
+@mixin icon-large {
+  @include background-size(2em, 86em);
+}
+
+@each $icon, $position in $icons {
+  .icon-#{$icon} {
+    @include icon-base;
+    background-position: 0 -#{($position * 2)}em;
+  }
+
+  .icon-#{$icon}-large {
+    @include icon-base;
+    @include icon-large;
+    background-position: 0 -#{($position * 4)}em;
+  }
+
+  .icon-#{$icon}-for-button {
+    @include icon-base;
+    @include icon-large;
+    background-position: 1em -#{($position * 4 + 0.5)}em;
+  }
+}
+

@@ -12,7 +12,7 @@
   a.dismiss {
     margin-top: 0.25em;
     float: right;
-    @include icon-x-2x;
+    @extend .icon-x-large;
     text-indent: 100%;
     overflow: hidden;
     width: 2em;

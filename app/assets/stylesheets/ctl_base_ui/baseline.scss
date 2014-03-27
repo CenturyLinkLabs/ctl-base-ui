@@ -1,0 +1,14 @@
+@import 'variables';
+
+body {
+  font-size: 100%;
+}
+
+body,
+button {
+  font-family: $base_font_family;
+}
+
+strong {
+  font-weight: bold;
+}
