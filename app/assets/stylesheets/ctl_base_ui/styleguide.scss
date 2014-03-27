@@ -67,14 +67,29 @@ h2 {
   background-color: $lime;
 }
 
+.green {
+  @extend .color-block;
+  background-color: $green;
+}
+
 .yellow {
   @extend .color-block;
   background-color: $yellow;
 }
 
+.orange {
+  @extend .color-block;
+  background-color: $orange;
+}
+
 .ctl-dark-green {
   @extend .color-block;
   background-color: $ctl_dark_green;
+}
+
+.ctl-light-green {
+  @extend .color-block;
+  background-color: $ctl-light-green;
 }
 
 .light-grey {
