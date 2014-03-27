@@ -1,6 +1,7 @@
 %header
   %nav
     %ul
+      %li= link_to('Buttons', '#buttons')
       %li= link_to('Colors', '#colors')
       %li= link_to('Icons', '#icons')
       %li= link_to('Notices', '#notices')
@@ -10,6 +11,9 @@
       This style guide uses class names that are tied to corresponding mixin names.
       In practice the class names can be much more semantic.
 
+  %section#buttons
+    %h2 Buttons
+    = render 'buttons'
   %section#colors
     %h2 Color Palette
     = render 'colors'
