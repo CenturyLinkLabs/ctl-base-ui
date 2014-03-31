@@ -8,38 +8,33 @@ h1 {
 }
 
 h2 {
-  color: $lipstick_red;
+  @extend h1;
   font-size: 1.3em;
   font-weight: 800;
-  padding: 0 0 0.5em 0;
 }
 
 h3 {
-  color: $lipstick_red;
+  @extend h1;
   font-size: 1.2em;
   font-weight: 800;
-  padding: 0 0 0.5em 0;
 }
 
 h4 {
-  color: $lipstick_red;
+  @extend h1;
   font-size: 1.2em;
   font-weight: 400;
-  padding: 0 0 0.5em 0;
 }
 
 h5 {
-  color: $lipstick_red;
+  @extend h1;
   font-size: 1.125em;
   font-weight: 400;
-  padding: 0 0 0.5em 0;
 }
 
 h6 {
-  color: $lipstick_red;
+  @extend h1;
   font-size: 0.929em;
   font-weight: 400;
-  padding: 0 0 0.5em 0;
 }
 
 
@@ -57,7 +52,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+h1 a:hover, 
+h2 a:hover, 
+h3 a:hover, 
+h4 a:hover, 
+h5 a:hover, 
+h6 a:hover {
   text-decoration: underline;
 }
 
