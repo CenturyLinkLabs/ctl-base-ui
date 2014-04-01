@@ -10,7 +10,7 @@ header {
   width: 100%;
   margin-bottom: 2em;
   background-color: #FFF;
-  border-bottom: #EBEBEB 2px solid;
+  border-bottom: $medium_grey 2px solid;
   padding: 1em;
   ul {
     width: 960px;
@@ -26,11 +26,7 @@ main {
 section {
   padding-bottom: 2em;
   margin-bottom: 2em;
-  border-bottom: #EBEBEB 1px solid;
-}
-
-h2 {
-  font-size: 2em;
+  border-bottom: $medium_grey 1px solid;
 }
 
 /* Section Specific styles */
