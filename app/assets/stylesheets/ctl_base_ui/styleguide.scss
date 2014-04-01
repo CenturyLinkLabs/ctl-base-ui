@@ -233,3 +233,13 @@ section {
   @extend .icon-minus-for-button;
   padding-left: 4em;
 }
+
+.button-primary-with-icon-star {
+  @extend .button-primary;
+  @extend .icon-star-for-button;
+  min-width: 35%;
+  width: 35%;
+  background-color: darken( $light_grey, 15% )!important;
+  margin-bottom: 10px;
+  cursor: default!important;
+}
