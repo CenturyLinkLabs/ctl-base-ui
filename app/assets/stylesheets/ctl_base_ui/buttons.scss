@@ -8,7 +8,7 @@
   border: 0;
   min-width: 10em;
   margin: 0 0 0 10px;
-  padding: 1.1em 2em;
+  padding: 1em 2em;
   background-color: $dark_blue;
   color: $white;
   font-size: 0.9em;
@@ -38,7 +38,7 @@
 
 a.button-primary {
   @extend .button-primary;
-  padding: 1.2em 0em;
+  padding: 1.1em 0em;
 }
 
 .button-secondary {
