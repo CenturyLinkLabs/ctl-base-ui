@@ -1,0 +1,63 @@
+@import 'colors';
+@import 'mixins';
+@import 'icons';
+
+.search-result-icon-box {
+  height: 120px;
+  width: 110px;
+  background-color: $dark_blue;
+  border: $dark_blue 1px solid;
+  float: left;
+}
+
+.search-results-item {
+  height: 100px;
+  width: 100%;
+  background-color: $light_grey;
+  border: darken( $light_grey, 10% ) 1px solid;
+  padding:10px 0;
+}
+
+.search-results-meta-type {
+  float: left;
+  height: 100%;
+  padding: 0 10px 0 20px;
+  border-left: darken( $light_grey, 10% ) 1px solid;
+}
+
+.search-result-icons {
+  @extend .search-results-meta-type;
+  width: 30px;
+}
+
+.search-result-text {
+  @extend .search-results-meta-type;
+  width: 430px;
+}
+
+.search-result-image-count {
+  @extend .search-results-meta-type;
+  width: 100px;
+}
+
+.circle-text {
+  background-color: darken( $light_grey, 10% );
+  border-radius: 50%;
+  height: 90px;
+  width: 100px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding:10px 0 0 0;
+
+    & span {
+      font-size: 2em;
+      font-weight: 800; 
+    }
+}
+
+.search-result-actions {
+  @extend .search-results-meta-type;
+  float:right;
+  padding-right: 0px;
+}
