@@ -11,5 +11,8 @@
  *= require_self
  *= require ./reset
  *= require ./baseline
- *= require_tree .
+ *= require ./typography
+ *= require ./buttons
+ *= require ./notices
+ *= require ./icons
  */
