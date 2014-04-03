@@ -27,29 +27,29 @@ $icons: (
 @mixin icon-base {
   background-image: asset-url('ctl_base_ui/icon_sprite.svg');
   background-repeat: no-repeat;
-  @include background-size(1em, 43em);
+  @include background-size(10px, 430px);
 }
 
 @mixin icon-large {
-  @include background-size(2em, 86em);
+  @include background-size(20px, 860px);
 }
 
 @each $icon, $position in $icons {
   .icon-#{$icon} {
     @include icon-base;
-    background-position: 0 -#{($position * 2)}em;
+    background-position: 0 -#{($position * 20)}px;
   }
 
   .icon-#{$icon}-large {
     @include icon-base;
     @include icon-large;
-    background-position: 0 -#{($position * 4)}em;
+    background-position: 0 -#{($position * 40)}px;
   }
 
   .icon-#{$icon}-for-button {
     @include icon-base;
     @include icon-large;
-    background-position: 1em -#{($position * 4 + 0.5)}em;
+    background-position: 10px #{-10 * ($position * 4) + 14}px;
   }
 }
 

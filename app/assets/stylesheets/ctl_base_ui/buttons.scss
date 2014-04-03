@@ -7,8 +7,7 @@
   border-radius: 0.3em;
   border: 0;
   min-width: 10em;
-  margin: 0 0 0 10px;
-  padding: 1.1em 2em;
+  padding: 16px 20px;
   background-color: $dark_blue;
   color: $white;
   font-size: 0.9em;
@@ -18,7 +17,7 @@
 
   &:hover {
     @include box-shadow(0, 0, 5px, rgba( $dark_blue, 0.6 ));
-    background-color: lighten( $dark_blue, 20% ) 
+    background-color: lighten( $dark_blue, 20% )
   }
 
   &:focus {

@@ -119,121 +119,19 @@ h2 {
   margin: 1em 0 0.5em;
 }
 
-.icon-plus-example {
-  @extend .icon-plus;
-  @extend .example-icon;
-}
-
-.icon-minus-example {
-  @extend .icon-minus;
-  @extend .example-icon;
-}
-
-.icon-x-example {
-  @extend .icon-x;
-  @extend .example-icon;
-}
-
-.icon-sprocket-example {
-  @extend .icon-sprocket;
-  @extend .example-icon;
-}
-
-.icon-arrowloop-example {
-  @extend .icon-arrowloop;
-  @extend .example-icon;
-}
-
-.icon-checkmark-example {
-  @extend .icon-checkmark;
-  @extend .example-icon;
-}
-
-.icon-document-example {
-  @extend .icon-document;
-  @extend .example-icon;
-}
-
-.icon-magnifying-glass-example {
-  @extend .icon-magnifying-glass;
-  @extend .example-icon;
-}
-
-.icon-pencil-example {
-  @extend .icon-pencil;
-  @extend .example-icon;
-}
-
-.icon-outbox-example {
-  @extend .icon-outbox;
-  @extend .example-icon;
-}
-
-.icon-grid-example {
-  @extend .icon-grid;
-  @extend .example-icon;
-}
-
-.icon-envelope-example {
-  @extend .icon-envelope;
-  @extend .example-icon;
-}
-
-.icon-list-example {
-  @extend .icon-list;
-  @extend .example-icon;
-}
-
-.icon-folder-example {
-  @extend .icon-folder;
-  @extend .example-icon;
-}
-
-.icon-menu-example {
-  @extend .icon-menu;
-  @extend .example-icon;
-}
-
-.icon-house-example {
-  @extend .icon-house;
-  @extend .example-icon;
-}
-
-.icon-star-example {
-  @extend .icon-star;
-  @extend .example-icon;
-}
-
-.icon-thin-arrow-right-example {
-  @extend .icon-thin-arrow-right;
-  @extend .example-icon;
-}
-
-.icon-thick-arrow-right-example {
-  @extend .icon-thick-arrow-right;
-  @extend .example-icon;
-}
-
-.icon-magnifying-glass-plus-example {
-  @extend .icon-magnifying-glass-plus;
-  @extend .example-icon;
-}
-
-.icon-magnifying-glass-minus-example {
-  @extend .icon-magnifying-glass-minus;
-  @extend .example-icon;
+@each $icon, $position in $icons {
+  .icon-#{$icon}-example {
+    @extend .icon-#{$icon};
+    @extend .example-icon;
+  }
 }
 
 /* Buttons */
 
-.button-primary-with-icon-plus {
-  @extend .button-primary;
-  @extend .icon-plus-for-button;
-  padding-left: 4em;
-}
-
-.button-primary-with-icon-minus {
-  @extend .button-primary;
-  @extend .icon-minus-for-button;
-  padding-left: 4em;
+@each $icon, $position in $icons {
+  .button-primary-with-icon-#{$icon} {
+    @extend .button-primary;
+    @extend .icon-#{$icon}-for-button;
+    padding-left: 4em;
+  }
 }

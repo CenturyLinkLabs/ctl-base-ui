@@ -9,4 +9,5 @@
 %h3 Buttons with icons
 %p buttons with icons
 %br
-%button.button-primary-with-icon-plus primary button with plus
+- %w( plus minus x sprocket arrowloop checkmark document magnifying-glass pencil outbox grid envelope list folder menu house star thin-arrow-right thick-arrow-right magnifying-glass-plus magnifying-glass-minus).each do |icon|
+  %button{class: "button-primary-with-icon-#{icon}"}= "primary button with #{icon}"
