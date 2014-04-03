@@ -1,7 +1,9 @@
 @import 'variables';
+@import 'colors';
 
 body {
   font-size: 100%;
+  color: $dark_grey;
 }
 
 body,
