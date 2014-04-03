@@ -20,7 +20,7 @@ header {
 
 main {
   width: 960px;
-  margin: 100px auto 0;
+  margin: 150px auto 0;
 }
 
 section {
@@ -94,22 +94,22 @@ h2 {
 
 .light-grey {
   @extend .color-block;
-  background-color: $light_grey; 
+  background-color: $light_grey;
 }
 
 .medium-grey {
   @extend .color-block;
-  background-color: $medium_grey; 
+  background-color: $medium_grey;
 }
 
 .warm-grey {
   @extend .color-block;
-  background-color: $warm_grey; 
+  background-color: $warm_grey;
 }
 
 .dark-grey {
   @extend .color-block;
-  background-color: $dark_grey; 
+  background-color: $dark_grey;
 }
 
 /* Icons */
