@@ -27,11 +27,11 @@ $icons: (
 @mixin icon-base {
   background-image: asset-url('ctl_base_ui/icon_sprite.svg');
   background-repeat: no-repeat;
-  @include background-size(10px, 430px);
+  @include background-size(10px, 1000px);
 }
 
 @mixin icon-large {
-  @include background-size(20px, 860px);
+  @include background-size(20px, 2000px);
 }
 
 @each $icon, $position in $icons {
