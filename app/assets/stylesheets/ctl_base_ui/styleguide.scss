@@ -124,6 +124,49 @@ h2 {
     @extend .icon-#{$icon};
     @extend .example-icon;
   }
+
+  .icon-#{$icon}-green-example {
+    @extend .icon-#{$icon};
+    @extend .example-icon;
+    @include icon-green;
+  }
+
+  .icon-#{$icon}-blue-example {
+    @extend .icon-#{$icon};
+    @extend .example-icon;
+    @include icon-blue;
+  }
+
+  .icon-#{$icon}-red-example {
+    @extend .icon-#{$icon};
+    @extend .example-icon;
+    @include icon-red;
+  }
+
+  .icon-#{$icon}-light-blue-example {
+    @extend .icon-#{$icon};
+    @extend .example-icon;
+    @include icon-light-blue;
+  }
+
+  .icon-#{$icon}-light-green-example {
+    @extend .icon-#{$icon};
+    @extend .example-icon;
+    @include icon-light-green;
+  }
+
+  .icon-#{$icon}-light-grey-example {
+    @extend .icon-#{$icon};
+    @extend .example-icon;
+    @include icon-light-grey;
+  }
+
+  .icon-#{$icon}-white-example {
+    background-color: $light_grey;
+    @extend .icon-#{$icon};
+    @extend .example-icon;
+    @include icon-white;
+  }
 }
 
 /* Buttons */
