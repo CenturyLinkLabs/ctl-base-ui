@@ -6,6 +6,10 @@
       %li= link_to('Icons', '#icons')
       %li= link_to('Notices', '#notices')
       %li= link_to('Typograhy','#typograhy')
+    %h4= "#{CtlBaseUi.configuration.app_name} specific items"
+    %ul
+      - CtlBaseUi.configuration.additional_entries.each do |entry|
+        %li= link_to(entry.humanize,"##{entry}")
 %main
   %section#about
     %p
@@ -27,3 +31,7 @@
   %section#typograhy
     %h2 Typography
     = render 'typography'
+  - CtlBaseUi.configuration.additional_entries.each do |entry|
+    %section{id: entry}
+      %h2= entry.humanize
+      = render "#{CtlBaseUi.configuration.partials_path}#{entry}"
