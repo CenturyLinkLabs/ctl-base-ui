@@ -10,3 +10,15 @@
   -moz-box-shadow:$top $left $blur $color #{$inset};
   box-shadow:$top $left $blur $color #{$inset};
 }
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: #{$radius};
+  -moz-border-radius: #{$radius};
+  border-radius: #{$radius};
+}
+
+@mixin border-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

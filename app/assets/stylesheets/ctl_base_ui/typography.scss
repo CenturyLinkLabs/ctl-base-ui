@@ -7,7 +7,8 @@ h4,
 h5,
 h6 {
   color: $lipstick_red;
-  padding: 0 0 0.5em 0;
+  padding-bottom: 0.6em;
+  margin-bottom: 0.6em;
 
   a {
     text-decoration: none;
@@ -21,6 +22,7 @@ h6 {
 h1 {
   font-size: 2.5em;
   font-weight: 200;
+  border-bottom: $medium_grey 1px solid;
 }
 
 h2 {
@@ -56,6 +58,11 @@ p {
 
 a {
   color: $dark_blue;
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
 }
 
 .microcopy {

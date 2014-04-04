@@ -4,7 +4,7 @@
 
 .button-primary {
   display: inline-block;
-  border-radius: 0.3em;
+  @include border-radius(0.3em);
   border: 0;
   min-width: 10em;
   padding: 16px 20px;

@@ -1,13 +1,9 @@
 %h3 Basic Buttons
-%p basic button descriptions
-%br
 %input.button-primary{ type: "submit", value: "Primary" }
 %button.button-secondary Secondary
 %a.button-positive Positive
 %button.button-negative Negative
 %button.button-primary{disabled: true} Disabled
 %h3 Buttons with icons
-%p buttons with icons
-%br
 - %w( plus minus x sprocket arrowloop checkmark document magnifying-glass pencil outbox grid envelope list folder menu house star thin-arrow-right thick-arrow-right magnifying-glass-plus magnifying-glass-minus).each do |icon|
   %button{class: "button-primary-with-icon-#{icon}"}= "primary button with #{icon}"
