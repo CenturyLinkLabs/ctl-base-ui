@@ -4,35 +4,37 @@
 @import 'buttons';
 
 
-header {
+nav {
   position: fixed;
-  z-index: 999;
-  top: 0;
-  width: 100%;
-  margin-bottom: 2em;
-  background-color: #FFF;
-  border-bottom: #EBEBEB 2px solid;
-  padding: 1em;
-  nav {
-    width: 960px;
-    margin: 0 auto;
+  background-color: $light_grey;
+  border-right: $medium_grey 1px solid;
+  width: 280px;
+  height: 100%;
+  overflow: auto;
 
-    ul {
-      float: left;
-      width: 200px;
-    }
+  h4 {
+    margin: 0;
+    padding: 10px 15px 5px;
+    border-bottom: $medium_grey 1px solid;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  ul li a {
+    font-size: 14px;
+    display: block;
+    padding: 3px 15px;
   }
 }
 
 main {
   width: 960px;
-  margin: 150px auto 0;
+  margin-left: 300px;
 }
 
 section {
-  padding-bottom: 2em;
-  margin-bottom: 2em;
-  border-bottom: #EBEBEB 1px solid;
+  padding: 2em 0;
+  border-bottom: $light_grey 1px solid;
 }
 
 h2 {

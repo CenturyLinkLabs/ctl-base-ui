@@ -1,18 +1,24 @@
-%header
-  %nav
-    %ul
-      %li= link_to('Buttons', '#buttons')
-      %li= link_to('Colors', '#colors')
-      %li= link_to('Icons', '#icons')
-      %li= link_to('Notices', '#notices')
-      %li= link_to('Typograhy','#typograhy')
-    %h4= "#{CtlBaseUi.configuration.app_name} specific items"
-    %ul
-      - CtlBaseUi.configuration.additional_entries.each do |entry|
-        %li= link_to(entry.humanize,"##{entry}")
+%nav
+  %h4 Generic components
+  %ul
+    %li= link_to('Buttons', '#buttons')
+    %li= link_to('Colors', '#colors')
+    %li= link_to('Icons', '#icons')
+    %li= link_to('Notices', '#notices')
+    %li= link_to('Typograhy','#typograhy')
+  %h4= "#{CtlBaseUi.configuration.app_name} specific components"
+  %ul
+    - CtlBaseUi.configuration.additional_entries.each do |entry|
+      %li= link_to(entry.humanize,"##{entry}")
 %main
   %section#about
+    %h1 CTL Base UI kit!
     %p
+      This UI kit provides the visual foundation for CTL labs projects.
+      Optionally, this styleguide may contain Application specific items if the developer of the parent application chooses to include them.
+      Application Specific items will appear in the menu under the "[My application] specific components" headline.
+    %p
+      %strong A quick not about semantics:
       This style guide uses class names that are tied to corresponding mixin names.
       In practice the class names can be much more semantic.
 
