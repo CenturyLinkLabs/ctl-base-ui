@@ -27,6 +27,8 @@ $icons: (
 @mixin icon-base {
   background-image: asset-url('ctl_base_ui/icon_sprite.svg');
   background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
   @include background-size(10px, 1000px);
 }
 
@@ -59,6 +61,8 @@ $icons: (
 }
 
 @mixin icon-large {
+  width: 20px;
+  height: 20px;
   @include background-size(20px, 2000px);
 }
 

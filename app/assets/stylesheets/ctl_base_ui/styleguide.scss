@@ -6,15 +6,21 @@
 
 header {
   position: fixed;
+  z-index: 999;
   top: 0;
   width: 100%;
   margin-bottom: 2em;
   background-color: #FFF;
   border-bottom: #EBEBEB 2px solid;
   padding: 1em;
-  ul {
+  nav {
     width: 960px;
     margin: 0 auto;
+
+    ul {
+      float: left;
+      width: 200px;
+    }
   }
 }
 
@@ -117,55 +123,84 @@ h2 {
 .example-icon {
   padding-left: 1.5em;
   margin: 1em 0 0.5em;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+  }
 }
 
 @each $icon, $position in $icons {
   .icon-#{$icon}-example {
-    @extend .icon-#{$icon};
     @extend .example-icon;
+
+    &:before {
+      @extend .icon-#{$icon};
+    }
   }
 
   .icon-#{$icon}-green-example {
-    @extend .icon-#{$icon};
     @extend .example-icon;
-    @include icon-green;
+
+    &:before {
+      @extend .icon-#{$icon};
+      @include icon-green;
+    }
   }
 
   .icon-#{$icon}-blue-example {
-    @extend .icon-#{$icon};
     @extend .example-icon;
-    @include icon-blue;
+
+    &:before {
+      @extend .icon-#{$icon};
+      @include icon-blue;
+    }
   }
 
   .icon-#{$icon}-red-example {
-    @extend .icon-#{$icon};
     @extend .example-icon;
-    @include icon-red;
+
+    &:before {
+      @extend .icon-#{$icon};
+      @include icon-red;
+    }
   }
 
   .icon-#{$icon}-light-blue-example {
-    @extend .icon-#{$icon};
     @extend .example-icon;
-    @include icon-light-blue;
+    &:before {
+      @extend .icon-#{$icon};
+      @include icon-light-blue;
+    }
   }
 
   .icon-#{$icon}-light-green-example {
-    @extend .icon-#{$icon};
     @extend .example-icon;
-    @include icon-light-green;
+
+    &:before {
+      @extend .icon-#{$icon};
+      @include icon-light-green;
+    }
   }
 
   .icon-#{$icon}-light-grey-example {
-    @extend .icon-#{$icon};
     @extend .example-icon;
-    @include icon-light-grey;
+    &:before {
+      @include icon-light-grey;
+      @extend .icon-#{$icon};
+    }
   }
 
   .icon-#{$icon}-white-example {
     background-color: $light_grey;
-    @extend .icon-#{$icon};
     @extend .example-icon;
-    @include icon-white;
+
+    &:before {
+      @include icon-white;
+      @extend .icon-#{$icon};
+    }
   }
 }
 
