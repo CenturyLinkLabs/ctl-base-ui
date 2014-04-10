@@ -35,6 +35,7 @@ main {
 section {
   padding: 2em 0;
   border-bottom: $light_grey 1px solid;
+  overflow: auto;
 }
 
 h2 {
@@ -46,91 +47,163 @@ h2 {
 /* Colors */
 
 .color-block {
-  padding: 10px;
+  @include border-box;
   margin: 10px 0px;
+  padding-left: 45px;
+  position: relative;
+  line-height: 35px;
+  width: 310px;
+  float: left;
+
+  &:before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+  }
 }
 
 .lipstick-red {
   @extend .color-block;
-  background-color: $lipstick_red;
+
+  &:before {
+    background-color: $lipstick_red;
+  }
 }
 
 .dark-red {
   @extend .color-block;
-  background-color: $dark_red;
+
+  &:before {
+    background-color: $dark_red;
+  }
 }
 
 .dark-blue {
   @extend .color-block;
-  background-color: $dark_blue;
+
+  &:before {
+    background-color: $dark_blue;
+  }
 }
 
 .sky-blue {
   @extend .color-block;
-  background-color: $sky_blue;
+
+  &:before {
+    background-color: $sky_blue;
+  }
 }
 
 .lime {
   @extend .color-block;
-  background-color: $lime;
+
+  &:before {
+    background-color: $lime;
+  }
 }
 
 .green {
   @extend .color-block;
-  background-color: $green;
+
+  &:before {
+    background-color: $green;
+  }
 }
 
 .yellow {
   @extend .color-block;
-  background-color: $yellow;
+
+  &:before {
+    background-color: $yellow;
+  }
 }
 
 .orange {
   @extend .color-block;
-  background-color: $orange;
+
+  &:before {
+    background-color: $orange;
+  }
 }
 
 .ctl-dark-green {
   @extend .color-block;
-  background-color: $ctl_dark_green;
+
+  &:before {
+    background-color: $ctl_dark_green;
+  }
 }
 
 .ctl-light-green {
   @extend .color-block;
-  background-color: $ctl-light-green;
+
+  &:before {
+    background-color: $ctl-light-green;
+  }
 }
 
 .light-grey {
   @extend .color-block;
-  background-color: $light_grey;
+
+  &:before {
+    background-color: $light_grey;
+  }
 }
 
 .medium-grey {
   @extend .color-block;
-  background-color: $medium_grey;
+
+  &:before {
+    background-color: $medium_grey;
+  }
 }
 
 .warm-grey {
   @extend .color-block;
-  background-color: $warm_grey;
+
+  &:before {
+    background-color: $warm_grey;
+  }
 }
 
 .dark-grey {
   @extend .color-block;
-  background-color: $dark_grey;
+
+  &:before {
+    background-color: $dark_grey;
+  }
 }
 
 /* Icons */
 
+.icon {
+  overflow: auto;
+  line-height: 50px;
+}
+
 .example-icon {
-  padding-left: 1.5em;
-  margin: 1em 0 0.5em;
+  @include border-box;
+  float: left;
   position: relative;
+  width: 20px;
+  height: 40px;
+  margin: 0 10px 15px 0;
+
   &:before {
     content: '';
     display: block;
     position: absolute;
+    left: 5px;
+    top: 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
     left: 0;
+    top: 20px;
   }
 }
 
@@ -141,6 +214,10 @@ h2 {
     &:before {
       @extend .icon-#{$icon};
     }
+
+    &:after {
+      @extend .icon-#{$icon}-large;
+    }
   }
 
   .icon-#{$icon}-green-example {
@@ -149,6 +226,11 @@ h2 {
     &:before {
       @extend .icon-#{$icon};
       @include icon-green;
+    }
+
+    &:after {
+      @include icon-green;
+      @extend .icon-#{$icon}-large;
     }
   }
 
@@ -159,6 +241,11 @@ h2 {
       @extend .icon-#{$icon};
       @include icon-blue;
     }
+
+    &:after {
+      @include icon-blue;
+      @extend .icon-#{$icon}-large;
+    }
   }
 
   .icon-#{$icon}-red-example {
@@ -168,13 +255,24 @@ h2 {
       @extend .icon-#{$icon};
       @include icon-red;
     }
+
+    &:after {
+      @include icon-red;
+      @extend .icon-#{$icon}-large;
+    }
   }
 
   .icon-#{$icon}-light-blue-example {
     @extend .example-icon;
+
     &:before {
       @extend .icon-#{$icon};
       @include icon-light-blue;
+    }
+
+    &:after {
+      @include icon-light-blue;
+      @extend .icon-#{$icon}-large;
     }
   }
 
@@ -185,23 +283,40 @@ h2 {
       @extend .icon-#{$icon};
       @include icon-light-green;
     }
+
+    &:after {
+      @include icon-light-green;
+      @extend .icon-#{$icon}-large;
+    }
   }
 
   .icon-#{$icon}-light-grey-example {
     @extend .example-icon;
+
     &:before {
       @include icon-light-grey;
       @extend .icon-#{$icon};
     }
+
+    &:after {
+      @extend .icon-#{$icon}-large;
+      @include icon-light-grey;
+    }
   }
 
   .icon-#{$icon}-white-example {
-    background-color: $light_grey;
     @extend .example-icon;
 
     &:before {
+      background-color: black;
       @include icon-white;
       @extend .icon-#{$icon};
+    }
+
+    &:after {
+      background-color: black;
+      @extend .icon-#{$icon}-large;
+      @include icon-white;
     }
   }
 }

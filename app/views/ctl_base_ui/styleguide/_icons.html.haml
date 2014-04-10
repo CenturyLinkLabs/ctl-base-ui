@@ -1,17 +1,11 @@
 - all_icons.each do |icon|
-  %div{class: "icon-#{icon}-example"}
-    ="#{icon} icon"
-  %div{class: "icon-#{icon}-red-example"}
-    ="- red"
-  %div{class: "icon-#{icon}-white-example"}
-    ="- white"
-  %div{class: "icon-#{icon}-light-grey-example"}
-    ="- light grey"
-  %div{class: "icon-#{icon}-light-green-example"}
-    ="- light green"
-  %div{class: "icon-#{icon}-light-blue-example"}
-    ="- light blue"
-  %div{class: "icon-#{icon}-green-example"}
-    ="- green"
-  %div{class: "icon-#{icon}-blue-example"}
-    ="- blue"
+  .icon
+    = icon
+    %div{class: "icon-#{icon}-example"}
+    %div{class: "icon-#{icon}-light-grey-example"}
+    %div{class: "icon-#{icon}-white-example"}
+    %div{class: "icon-#{icon}-red-example"}
+    %div{class: "icon-#{icon}-light-blue-example"}
+    %div{class: "icon-#{icon}-blue-example"}
+    %div{class: "icon-#{icon}-light-green-example"}
+    %div{class: "icon-#{icon}-green-example"}
