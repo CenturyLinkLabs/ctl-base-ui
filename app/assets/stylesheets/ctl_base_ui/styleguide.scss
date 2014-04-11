@@ -7,23 +7,56 @@
 nav {
   position: fixed;
   background-color: $light_grey;
-  border-right: $medium_grey 1px solid;
   width: 280px;
   height: 100%;
   overflow: auto;
 
+  h1 {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  h1.ctl-labs-logo a {
+    background: asset-url('ctl_base_ui/ctl_labs_long_color.svg') 15px 15px no-repeat;
+    @include background-size(240px, 56px);
+    width: 280px;
+    height: 90px;
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+  }
+
+  h1.ctl-labs-logo a:hover {
+    background-color: #FFF;
+    width: 275px;
+    border-right: 5px solid $grey;
+    transition: all 0.35s ease;
+  }
+
   h4 {
-    margin: 0;
-    padding: 10px 15px 5px;
-    border-bottom: $medium_grey 1px solid;
-    font-size: 16px;
+    margin: 0px 0px 10px 0px;
+    padding: 15px 15px;
+    border-bottom: $grey 1px solid;
+    font-size: 13px;
     font-weight: bold;
   }
 
   ul li a {
-    font-size: 14px;
+    font-size: 13px;
     display: block;
-    padding: 3px 15px;
+    padding: 5px 15px;
+    color: $dark_grey;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    color: $sky-blue;
+    transition: all 0.35s ease;
+    background-color: #FFF;
+    border-right: 5px solid $sky-blue;
+    padding-right: 10px;
   }
 }
 
@@ -36,6 +69,20 @@ section {
   padding: 2em 0;
   border-bottom: $light_grey 1px solid;
   overflow: auto;
+}
+
+section#about p {
+  font-size: 18px;
+  color: $medium_grey;
+}
+
+section h2:first-of-type {
+  color: $sky-blue;
+  font-weight: 100;
+  letter-spacing: 2px;
+  background-color: $light_grey;
+  border-left: 5px solid $sky-blue;
+  padding: 10px 10px 10px 15px;
 }
 
 h2 {
@@ -152,6 +199,14 @@ h2 {
   }
 }
 
+.grey {
+  @extend .color-block;
+
+  &:before {
+    background-color: $grey;
+  }
+}
+
 .medium-grey {
   @extend .color-block;
 
@@ -181,6 +236,8 @@ h2 {
 .icon {
   overflow: auto;
   line-height: 50px;
+  border-bottom:1px solid #f1f1f1;
+  margin:0px 0px 20px 0px;
 }
 
 .example-icon {
@@ -308,13 +365,13 @@ h2 {
     @extend .example-icon;
 
     &:before {
-      background-color: black;
+      background-color: $medium_grey;
       @include icon-white;
       @extend .icon-#{$icon};
     }
 
     &:after {
-      background-color: black;
+      background-color: $medium_grey;
       @extend .icon-#{$icon}-large;
       @include icon-white;
     }
