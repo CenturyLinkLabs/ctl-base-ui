@@ -1,5 +1,5 @@
 %nav
-  %h1.ctl-labs-logo CenturyLink Labs
+  %h1.ctl-labs-logo= link_to('CenturLink Labs', '#about')
   %h4 Generic components
   %ul
     %li= link_to('Buttons', '#buttons')
@@ -13,7 +13,7 @@
       %li= link_to(entry.humanize,"##{entry}")
 %main
   %section#about
-    %h1 CTL Base UI kit!
+    %h1 CenturyLink Labs Base UI Kit
     %p
       This UI kit provides the visual foundation for CenturyLink Labs projects.
       Optionally, this styleguide may contain application-specific items if the developer of the parent application chooses to include them.

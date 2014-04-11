@@ -11,16 +11,28 @@ nav {
   height: 100%;
   overflow: auto;
 
-  h1.ctl-labs-logo {
+  h1 {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  h1.ctl-labs-logo a {
     background: asset-url('ctl_base_ui/ctl_labs_long_color.svg') 15px 15px no-repeat;
     @include background-size(240px, 56px);
-    width: 260px;
-    height: 60px;
+    width: 280px;
+    height: 90px;
+    display: block;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-    border-bottom: none;
-    margin-bottom: 0px;
+  }
+
+  h1.ctl-labs-logo a:hover {
+    background-color: #FFF;
+    width: 275px;
+    border-right: 5px solid $grey;
+    transition: all 0.35s ease;
   }
 
   h4 {
