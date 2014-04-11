@@ -17,7 +17,8 @@
 
   &:hover {
     @include box-shadow(0, 0, 5px, rgba( $dark_blue, 0.6 ));
-    background-color: lighten( $dark_blue, 20% )
+    background-color: lighten( $dark_blue, 20% );
+    transition: background-color 0.25s ease;
   }
 
   &:focus {
