@@ -48,6 +48,10 @@ $icons: (
   background-image: asset-url('ctl_base_ui/icon_sprite_light_green.svg');
 }
 
+@mixin icon-grey {
+  background-image: asset-url('ctl_base_ui/icon_sprite.svg');
+}
+
 @mixin icon-light-grey {
   background-image: asset-url('ctl_base_ui/icon_sprite_light_grey.svg');
 }
