@@ -20,12 +20,10 @@ nav {
   h1.ctl-labs-logo a {
     background: asset-url('ctl_base_ui/ctl_labs_long_color.svg') 15px 15px no-repeat;
     @include background-size(240px, 56px);
+    @include hide-text;
     width: 280px;
     height: 90px;
     display: block;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
   }
 
   h1.ctl-labs-logo a:hover {
