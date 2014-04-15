@@ -15,8 +15,6 @@
     @extend .icon-x-large;
     text-indent: 100%;
     overflow: hidden;
-    width: 2em;
-    height: 2em;
   }
 }
 
@@ -24,16 +22,20 @@
   @extend .notice-default;
   color: $white;
   background-color: $lime;
+
+  a.dismiss {
+    @include icon-white;
+  }
 }
 
 .notice-warning {
-  @extend .notice-default;
+  @extend .notice-success;
   color: $white;
   background-color: $orange;
 }
 
 .notice-danger {
-  @extend .notice-default;
+  @extend .notice-success;
   color: $white;
   background-color: $dark_red;
 }
