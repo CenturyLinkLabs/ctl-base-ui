@@ -12,8 +12,8 @@
     - CtlBaseUi.configuration.additional_entries.each do |entry|
       %li= link_to(entry.humanize,"##{entry}")
 %main
+  %h1 CenturyLink Labs Base UI Kit
   %section#about
-    %h1 CenturyLink Labs Base UI Kit
     %p
       This UI kit provides the visual foundation for CenturyLink Labs projects.
       Optionally, this styleguide may contain application-specific items if the developer of the parent application chooses to include them.
@@ -38,6 +38,7 @@
   %section#typograhy
     %h2 Typography
     = render 'typography'
+  %h1= "#{CtlBaseUi.configuration.app_name} specific components"
   - CtlBaseUi.configuration.additional_entries.each do |entry|
     %section{id: entry}
       %h2= entry.humanize
