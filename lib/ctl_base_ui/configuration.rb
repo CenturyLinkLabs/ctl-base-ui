@@ -1,9 +1,10 @@
 module CtlBaseUi
   class Configuration
-    attr_accessor :additional_entries, :partials_path, :app_name, :additional_stylesheets
+    attr_accessor :additional_entries, :partials_path, :app_name, :additional_stylesheets, :view_helpers
 
     def initialize
       @additional_entries = []
+      @view_helpers = []
       @partials_path = '/styleguide/'
       @app_name = 'My App'
       @additional_stylesheets = []
