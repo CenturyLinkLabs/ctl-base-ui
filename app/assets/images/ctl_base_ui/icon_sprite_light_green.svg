@@ -103,4 +103,24 @@
 <path fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" d="M2.6,882H0.9v6.2h-2.6V882h-1.2v-2.2h1.2v-1.4c0-1,0.5-2.6,2.6-2.6
 	l1.9,0v2.1H1.5c-0.2,0-0.5,0.1-0.5,0.6v1.3h2L2.6,882z M0,872c-5.5,0-10,4.5-10,10c0,5.5,4.5,10,10,10s10-4.5,10-10
 	C10,876.5,5.5,872,0,872z"/>
+<g>
+	<path fill="#83BB42" d="M0,919.5L0,919.5L0,919.5C0,919.5,0,919.5,0,919.5z"/>
+	<path fill="#83BB42" d="M5.9,917H3.3c0,0,1.4,0.9,1.6,2.5h0.9h0c0.9,0,1.6,0.7,1.6,1.6v1.7c0,0.9-0.7,1.7-1.6,1.7H0
+		c-0.9,0-1.7-0.8-1.7-1.7v-1.6h-2.5v1.6c0,0.6,0.1,1.2,0.4,1.7C-3.2,926-1.7,927,0,927h5.8c2.3,0,4.1-1.9,4.1-4.2v-1.7
+		C10,918.8,8.2,917,5.9,917z"/>
+	<path fill="#83BB42" d="M3.8,919.5C3.2,918,1.7,917,0,917h-5.8c-2.3,0-4.2,1.8-4.2,4.1v1.7c0,2.3,1.9,4.2,4.2,4.2h2.5
+		c0,0-1.3-0.9-1.7-2.5h-0.8c-0.9,0-1.7-0.8-1.7-1.7v-1.7c0-0.9,0.8-1.6,1.7-1.6H0h0c0.9,0,1.6,0.7,1.6,1.6v1.7c0,0,0,0,0,0h2.5
+		c0,0,0,0,0,0v-1.7C4.2,920.6,4,920,3.8,919.5z"/>
+</g>
+<g>
+	<rect x="-9.5" y="964.2" fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" width="3" height="3"/>
+	<rect x="-5.5" y="964.2" fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" width="3" height="3"/>
+	<rect x="-1.5" y="964.2" fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" width="3" height="3"/>
+	<rect x="2.5" y="964.2" fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" width="3" height="3"/>
+	<rect x="-5.5" y="960.2" fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" width="3" height="3"/>
+	<rect x="-1.5" y="960.2" fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" width="3" height="3"/>
+	<rect x="2.5" y="960.2" fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" width="3" height="3"/>
+	<rect x="2.5" y="956.2" fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" width="3" height="3"/>
+	<rect x="6.5" y="964.2" fill-rule="evenodd" clip-rule="evenodd" fill="#83BB42" width="3" height="3"/>
+</g>
 </svg>
