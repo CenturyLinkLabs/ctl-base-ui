@@ -1,0 +1,15 @@
+.ui-widget-overlay.ui-front
+.ui-dialog
+  .ui-dialog-titlebar
+    %span.ui-dialog-title Modal Title
+    %button.ui-dialog-titlebar-close
+      %span.ui-button-icon-primary
+  .ui-dialog-content.ui-widget-content
+    %p
+      The modal styles work with classnames provided by jqueryui. The example here includes
+      the minimum markup needed for the style. The overlay is used by passing
+      {modal: true} when calling .dialog on the element you want to populate the modal.
+  .ui-dialog-buttonpane
+    .ui-dialog-buttonset
+      %button.button-secondary
+        %span.ui-button-text Cancel

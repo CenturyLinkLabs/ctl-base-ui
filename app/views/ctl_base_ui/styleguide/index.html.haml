@@ -7,6 +7,7 @@
     %li= link_to('Icons', '#icons')
     %li= link_to('Notices', '#notices')
     %li= link_to('Typograhy','#typograhy')
+    %li= link_to('Modal Windows','#modals')
   %h4= "#{CtlBaseUi.configuration.app_name} specific components"
   %ul
     - CtlBaseUi.configuration.additional_entries.each do |entry|
@@ -38,6 +39,9 @@
   %section#typograhy
     %h2 Typography
     = render 'typography'
+  %section#modals
+    %h2 Modal Windows
+    = render 'modals'
   %h1= "#{CtlBaseUi.configuration.app_name} specific components"
   - CtlBaseUi.configuration.additional_entries.each do |entry|
     %section{id: entry}
