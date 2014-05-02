@@ -51,9 +51,20 @@
     background: none;
   }
 
-  .ui-dialog-buttonpane .ui-dialog-buttonset {
-    float: right;
-    margin: 0 15px 15px 0;
+  .ui-dialog-buttonpane {
+    width: 100%;
+    @include border-box;
+    margin-top: 15px;
+    border-top: 1px solid $grey;
+
+    .ui-dialog-buttonset {
+      padding: 15px;
+      overflow: hidden;
+
+      button {
+        float: right;
+      }
+    }
   }
 }
 
