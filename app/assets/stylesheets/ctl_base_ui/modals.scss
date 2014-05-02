@@ -1,0 +1,67 @@
+@import 'colors';
+@import 'icons';
+@import 'mixins';
+
+.ui-dialog {
+  overflow: hidden;
+  background-color: $white;
+  border: 1px solid #444;
+  max-width: 860px;
+  @include box-shadow(0, 0, 50px, #222);
+
+  .ui-dialog-title {
+    width: 100%;
+    @include border-box;
+    margin: 0;
+    padding: 15px 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .ui-dialog-titlebar {
+    position: relative;
+    color: $white;
+    background-color: $sky_blue;
+    padding: 15px 10px;
+    font-weight: bold;
+    cursor: move;
+
+    .ui-dialog-titlebar-close  {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background-color: transparent;
+      border: none;
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+      @include icon-white;
+      @extend .icon-x-large;
+      .ui-button-text{
+        display: none;
+      }
+    }
+  }
+
+  .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: 15px;
+    background: none;
+  }
+
+  .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: right;
+    margin: 0 15px 15px 0;
+  }
+}
+
+.ui-widget-overlay.ui-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
+}

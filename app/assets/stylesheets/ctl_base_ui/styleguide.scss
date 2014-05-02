@@ -389,3 +389,17 @@ h2 {
     padding-left: 4em;
   }
 }
+
+/* Modals */
+#modals {
+  position: relative;
+  height: 375px;
+}
+.ui-dialog {
+  position: relative;
+  margin: 50px auto;
+}
+.ui-widget-overlay.ui-front {
+  top: 84px;
+  height: 315px
+}
