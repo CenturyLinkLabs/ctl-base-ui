@@ -70,7 +70,12 @@ main {
 section {
   padding: 2em 0;
   border-bottom: $light_grey 1px solid;
-  overflow: auto;
+  /* overflow: auto; */
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
 }
 
 section#about p {
@@ -402,4 +407,8 @@ h2 {
 .ui-widget-overlay.ui-front {
   top: 84px;
   height: 315px
+}
+
+select {
+  min-width: 160px;
 }

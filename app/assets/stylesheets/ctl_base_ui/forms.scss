@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'colors';
+@import 'icons';
 
 input[type='text'],
 input[type='number'] {
@@ -13,5 +14,73 @@ input[type='number'] {
     color: $dark_grey;
     border-color: $dark_grey;
     outline: none;
+  }
+}
+
+.chosen-container {
+  .chosen-single {
+    padding: 14px 10px;
+    color: $warm_grey;
+    border: $warm_grey 1px solid;
+    background: $white !important;
+
+    span {
+      margin-right: 40px;
+    }
+
+    div {
+      @include border-box;
+      width: 40px;
+
+      b {
+        margin-top: 10px;
+        background: none;
+        height: 30px;
+        border-left: $warm_grey 1px solid;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 15px;
+          @extend .icon-thick-arrow-down;
+        }
+      }
+    }
+  }
+
+  .chosen-results {
+    li {
+      @include border-box;
+      @include border-radius(3px);
+      height: 40px;
+      padding-top: 12px;
+      position: relative;
+      padding-left: 25px;
+
+      &.highlighted {
+        background: $light_grey;
+        color: $sky_blue;
+      }
+
+      &.result-selected {
+        &:before {
+          position: absolute;
+          left: 10px;
+          top: 15px;
+          content: '';
+          @extend .icon-checkmark;
+          @include icon-green;
+        }
+      }
+    }
+  }
+}
+
+.chosen-container-active {
+  .chosen-single,
+  .chosen-drop {
+    border-color: $sky_blue !important;
   }
 }

@@ -1,3 +1,14 @@
 %h3 Inputs
 %input{type: :text, placeholder: 'text input'}
 %input{type: :number, placeholder: 'number input'}
+%h3 Selects
+%select#example-select
+  %option{value: 1} bizaaam
+  %option{value: 2} baz
+%p.microcopy
+  Note: requires pulling in chosen, require from /ctl-base-ui/chosen
+:javascript
+  $('#example-select').chosen({
+    disable_search: true
+  });
+
