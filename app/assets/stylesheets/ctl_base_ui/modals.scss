@@ -3,34 +3,33 @@
 @import 'mixins';
 
 .ui-dialog {
-  overflow: hidden;
   background-color: $white;
   border: 1px solid #444;
   max-width: 860px;
+  height: 570px;
   @include box-shadow(0, 0, 50px, #222);
-
-  .ui-dialog-title {
-    width: 100%;
-    @include border-box;
-    margin: 0;
-    padding: 15px 10px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
+  overflow: hidden;
 
   .ui-dialog-titlebar {
-    position: relative;
+    @include border-box;
     color: $white;
     background-color: $sky_blue;
     padding: 15px 10px;
     font-weight: bold;
     cursor: move;
+    height: 50px;
 
+    .ui-dialog-title {
+      @include border-box;
+      width: 90%;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
     .ui-dialog-titlebar-close  {
-      position: absolute;
-      top: 12px;
-      right: 12px;
+      float: right;
+      margin-left: 4px;
       background-color: transparent;
       border: none;
       height: 20px;
@@ -45,15 +44,15 @@
   }
 
   .ui-dialog-content {
-    position: relative;
     border: 0;
-    padding: 15px;
-    background: none;
+    padding: 15px 15px 0 15px;
+    overflow-y: scroll;
+    height: 410px;
   }
 
   .ui-dialog-buttonpane {
-    width: 100%;
     @include border-box;
+    width: 100%;
     margin-top: 15px;
     border-top: 1px solid $grey;
 
