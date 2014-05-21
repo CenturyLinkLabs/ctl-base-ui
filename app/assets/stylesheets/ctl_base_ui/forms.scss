@@ -84,3 +84,9 @@ input[type='number'] {
     border-color: $sky_blue !important;
   }
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
+  .chosen-container-single .chosen-single div b {
+    background: none !important;
+  }
+}
