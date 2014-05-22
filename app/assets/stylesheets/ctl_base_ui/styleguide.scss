@@ -391,7 +391,8 @@ h2 {
   .button-primary-with-icon-#{$icon} {
     @extend .button-primary;
     @extend .icon-#{$icon}-for-button;
-    padding-left: 4em;
+    padding-left: 3em;
+    margin-bottom: .5em;
   }
 }
 
@@ -403,6 +404,10 @@ h2 {
 .ui-dialog {
   position: relative;
   margin: 50px auto;
+  height: 208px;
+  .ui-dialog-content {
+    height: 54px;
+  }
 }
 .ui-widget-overlay.ui-front {
   top: 84px;

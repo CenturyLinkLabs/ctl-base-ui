@@ -81,6 +81,12 @@ $icons: (
   background-image: asset-url('ctl_base_ui/icon_sprite_white.svg');
 }
 
+@mixin icon-medium {
+  width: 15px;
+  height: 15px;
+  @include background-size(15px, 1500px);
+}
+
 @mixin icon-large {
   width: 20px;
   height: 20px;
@@ -93,6 +99,12 @@ $icons: (
     background-position: 0 -#{($position * 20)}px;
   }
 
+  .icon-#{$icon}-medium {
+    @include icon-base;
+    @include icon-medium;
+    background-position: 0 -#{($position * 30)}px;
+  }
+
   .icon-#{$icon}-large {
     @include icon-base;
     @include icon-large;
@@ -103,15 +115,15 @@ $icons: (
     position: relative;
 
     &:after {
-      @extend .icon-#{$icon}-large;
+      @extend .icon-#{$icon}-medium;
       @include icon-white;
       content: '';
       position: absolute;
-      left: 10px;
-      top: 15px;
+      left: 12px;
+      top: 12px;
       display: block;
-      height: 20px;
-      width: 20px;
+      height: 15px;
+      width: 15px;
     }
   }
 }

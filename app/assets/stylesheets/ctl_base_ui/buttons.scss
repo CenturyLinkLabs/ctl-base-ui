@@ -7,7 +7,7 @@
   @include border-radius(0.3em);
   border: 0;
   min-width: 10em;
-  padding: 16px 20px;
+  padding: 10px 15px 11px;
   background-color: $dark_blue;
   color: $white;
   font-size: 0.9em;
@@ -38,7 +38,7 @@
 
 a.button-primary {
   @extend .button-primary;
-  padding: 1.2em 0em;
+  padding: .9em 0em;
 }
 
 .button-secondary {
