@@ -2,6 +2,7 @@
   %h1.ctl-labs-logo= link_to('CenturLink Labs', '#about')
   %h4 Generic components
   %ul
+    %li= link_to('CTL Identity', '#ctl_id')
     %li= link_to('Buttons', '#buttons')
     %li= link_to('Forms', '#forms')
     %li= link_to('Colors', '#colors')
@@ -25,6 +26,9 @@
       This style guide uses class names that are tied to corresponding mixin names.
       In practice, the class names can be much more semantic.
 
+  %section#ctl_id
+    %h2 Century Link Identity
+    = render 'century_link_identity'
   %section#buttons
     %h2 Buttons
     = render 'buttons'

@@ -98,6 +98,19 @@ h2 {
 
 /* Section Specific styles */
 
+/* CTL Identity */
+
+.ctl-logo-base {
+  height: 30px;
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  @include hide-text;
+  background: image-url('ctl_base_ui/ctl_logo_base.svg') no-repeat;
+  @include background-size(140px, 30px);
+  background-position: center left;
+}
+
 /* Colors */
 
 .color-block {
