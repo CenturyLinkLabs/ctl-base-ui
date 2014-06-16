@@ -6,7 +6,7 @@ module CtlBaseUi
         thick-arrow-right magnifying-glass-plus magnifying-glass-minus comment-box
         happy-face sad-face copy twitter linked-in facebook link docker-blocks
         disks speedometer thin-arrow-down thick-arrow-down thin-arrow-left
-        thick-arrow-left thin-arrow-up thick-arrow-up )
+        thick-arrow-left thin-arrow-up thick-arrow-up github )
     end
   end
 end
