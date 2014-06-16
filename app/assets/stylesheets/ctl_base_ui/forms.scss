@@ -3,7 +3,8 @@
 @import 'icons';
 
 input[type='text'],
-input[type='number'] {
+input[type='number'],
+textarea {
   @include border-radius(0.3em);
   padding: 10px;
   font-size: 13px;
