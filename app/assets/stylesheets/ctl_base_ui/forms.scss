@@ -2,6 +2,14 @@
 @import 'colors';
 @import 'icons';
 
+label.optional {
+  &:after {
+    content: ' (Optional)';
+    font-weight: normal;
+    font-style: italic;
+  }
+}
+
 input[type='text'],
 input[type='number'],
 textarea {
