@@ -2,6 +2,10 @@
 @import 'colors';
 @import 'icons';
 
+label {
+  cursor: pointer;
+}
+
 label.optional {
   &:after {
     content: ' (Optional)';
