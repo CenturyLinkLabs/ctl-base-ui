@@ -8,7 +8,7 @@
   border: 0;
   min-width: 10em;
   padding: 10px 15px 11px;
-  background-color: $dark_blue;
+  background-color: $ctl_light_green;
   color: $white;
   font-size: 0.9em;
   font-weight: bold;
@@ -16,8 +16,8 @@
   cursor: pointer;
 
   &:hover {
-    @include box-shadow(0, 0, 5px, rgba( $dark_blue, 0.6 ));
-    background-color: lighten( $dark_blue, 20% );
+    @include box-shadow(0, 0, 5px, rgba( $ctl_light_green, 0.6 ));
+    background-color: darken( $ctl_light_green, 5% );
     transition: background-color 0.25s ease;
   }
 
@@ -30,7 +30,7 @@
     color: $medium_grey;
 
     &:hover {
-      @include box-shadow(0, 0, 5px, rgba( $dark_blue, 0.0 ));
+      @include box-shadow(0, 0, 5px, rgba( $ctl_light_green, 0.0 ));
       cursor: not-allowed;
     }
   }
@@ -55,12 +55,12 @@ a.button-primary {
 
 .button-positive {
   @extend .button-primary;
-  background-color: darken( $lime, 20% );
+  background-color: $orange;
 
   &:hover {
     @extend .button-primary;
-    @include box-shadow(0, 0, 5px, rgba( $ctl_dark_green, 0.6 ));
-    background-color: $lime;
+    @include box-shadow(0, 0, 5px, rgba( $orange, 0.6 ));
+    background-color: darken( $orange, 5% );
   }
 }
 
