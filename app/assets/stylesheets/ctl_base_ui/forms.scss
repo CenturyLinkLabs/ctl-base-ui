@@ -74,7 +74,7 @@ input[type='number'] {
 
       &.highlighted {
         background: $light_grey;
-        color: $sky_blue;
+        color: $blue_grey;
       }
 
       &.result-selected {
@@ -94,7 +94,7 @@ input[type='number'] {
 .chosen-container-active {
   .chosen-single,
   .chosen-drop {
-    border-color: $sky_blue !important;
+    border-color: $blue_grey !important;
   }
 }
 
