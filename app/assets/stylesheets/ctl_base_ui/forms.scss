@@ -6,7 +6,8 @@ label {
   cursor: pointer;
 }
 
-label.optional {
+label.optional,
+dt.optional {
   &:after {
     content: ' (Optional)';
     font-weight: normal;
