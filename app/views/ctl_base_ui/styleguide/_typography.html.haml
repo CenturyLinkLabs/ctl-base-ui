@@ -11,3 +11,14 @@
 %h6 Samuel L Jackson doesn't like H6 tags
 %p Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
 %p.microcopy Exmaple of microcopy
+%code
+  :preserve
+    # some code
+    Started GET "/apps/1/services/2.json" for 10.0.2.2 at 2014-05-12 22:06:53 +0000
+    Processing by ServicesController#show as JSON
+    Parameters: {"app_id"=>"1", "id"=>"2"}
+    App Load (0.1ms)  SELECT  "apps".* FROM "apps"  WHERE "apps"."id" = ? LIMIT 1  [["id", 1]]
+    Service Load (0.9ms)  SELECT  "services".* FROM "services"  WHERE "services"."app_id" = ? AND "services"."id" = ? LIMIT 1  [["app_id", 1], ["id", 2]]
+    AppCategory Load (0.1ms)  SELECT "app_categories".* FROM "app_categories" INNER JOIN "service_categories" ON "app_categories"."id" = "service_categories"."app_category_id" WHERE "service_categories"."service_id" = ?  [["service_id", 2]]
+    ServiceLink Load (0.1ms)  SELECT "service_links".* FROM "service_links"  WHERE "service_links"."linked_from_service_id" = ?  [["linked_from_service_id", 2]]
+    Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 1.2ms)

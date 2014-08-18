@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'variables';
 
 h1,
 h2,
@@ -69,4 +70,10 @@ strong {
 .microcopy {
   color: $medium_grey;
   font-style: italic;
+}
+
+code {
+  white-space: pre;
+  font-family: $monospace_font_family;
+  font-size: 0.9em;
 }
