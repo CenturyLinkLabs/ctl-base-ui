@@ -38,7 +38,8 @@
 
 a.button-primary {
   @extend .button-primary;
-  padding: .9em 0em;
+  padding-top: .9em;
+  padding-bottom: .9em;
 }
 
 .button-secondary {
