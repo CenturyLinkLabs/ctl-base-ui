@@ -28,3 +28,10 @@
   white-space: nowrap;
   text-indent: 100%;
 }
+
+@mixin transition($input) {
+  transition: #{$input};
+  -o-transition: #{$input};
+  -moz-transition: #{$input};
+  -webkit-transition: #{$input};
+}
