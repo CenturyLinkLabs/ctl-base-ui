@@ -66,6 +66,19 @@ strong {
   font-weight: bold;
 }
 
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+a.title {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $dark_blue;
+  }
+}
+
 .microcopy {
   color: $medium_grey;
   font-style: italic;
