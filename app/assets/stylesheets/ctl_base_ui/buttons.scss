@@ -2,6 +2,10 @@
 @import 'mixins';
 @import 'icons';
 
+button {
+  cursor: pointer;
+}
+
 .button-primary {
   display: inline-block;
   @include border-radius(0.3em);
