@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Internal CTL base UI toolkit"
   s.description = "Internal CTL base UI toolkit"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "4.1.7"
