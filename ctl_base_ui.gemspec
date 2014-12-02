@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = CtlBaseUi::VERSION
   s.authors     = ["Alex Welch"]
   s.email       = ["alexander.welch@savvis.com"]
-  s.homepage    = "http://localhost:3000"
+  s.homepage    = "https://github.com/CenturyLinkLabs/ctl-base-ui"
   s.summary     = "Internal CTL base UI toolkit"
   s.description = "Internal CTL base UI toolkit"
 
