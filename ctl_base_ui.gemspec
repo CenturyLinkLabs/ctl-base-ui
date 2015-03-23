@@ -15,7 +15,6 @@ Gem::Specification.new do |s|
   s.licenses = ['APACHE-2']
 
   s.files = Dir["{app,config,db,lib,vendor}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.1"
   s.add_dependency "haml", "~> 4.0"
