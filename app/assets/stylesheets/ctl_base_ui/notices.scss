@@ -39,3 +39,14 @@
   color: $white;
   background-color: $dark_red;
 }
+
+div[class*='notice-'] {
+  h1, h2 {
+    font-size: 100%;
+    color: white;
+    font-weight: bold;
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
