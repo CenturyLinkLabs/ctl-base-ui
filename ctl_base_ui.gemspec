@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.1"
   s.add_dependency "haml", "~> 4.0"
   s.add_dependency "sass", "~> 3.3"
-  s.add_dependency "jquery-rails", "~> 3.1"
+  s.add_dependency "jquery-rails", ">= 3.1", "< 5.0"
   s.add_dependency "jquery-ui-rails", "~> 4.2"
 end
