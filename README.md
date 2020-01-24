@@ -2,6 +2,10 @@
 
 The foundation UI kit for CTL labs products residing on the web.
 
+## NOTE
+
+This repo is no longer being maintained. Users are welcome to fork it, but we make no warranty of its functionality.
+
 ## Language & Framework specific?
 
 Currently this puppy is a mountable (Ruby on Rails) engine. 
